@@ -1,12 +1,15 @@
-exampleVPC:
-  Type: AWS::EC2::VPC
-  Properties:
-    CidrBlock: 10.0.0.0/16
-    EnableDnsSupport: 'true'
-    EnableDnsHostnames: 'true'
-    Tags:
-     - Key: test
-       Value: testScript
+Description:
+  Creating VPC through cloudFormation
+Resources:
+  exampleVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsSupport: 'true'
+      EnableDnsHostnames: 'true'
+      Tags:
+       - Key: test
+         Value: testScript
 
 
 

@@ -1,0 +1,19 @@
+exampleVPC:
+  Type: AWS::EC2::VPC
+  Properties:
+    CidrBlock: 10.0.0.0/16
+    EnableDnsSupport: 'true'
+    EnableDnsHostnames: 'true'
+    Tags:
+     - Key: test
+       Value: testScript
+
+
+
+      #  To create this AWS resource, follow the steps below
+      # 1. open the file in your terminal and connect you AWS account through AWS CLI
+      # OR, use AWS ec2 connect through the console to open a terminal
+      # Navigate to the folder where the yaml file (vpc.yml) is located
+      # 2. enter the following command; 
+      #  aws cloudformation create-stack --stack-name myFirstTest --region us-east-1 --template-body file://vpc.yml
+      # Note: stack-name, region depends on your choice

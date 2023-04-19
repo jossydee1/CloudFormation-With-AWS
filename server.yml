@@ -57,7 +57,7 @@ Resources:
           systemctl start apache2.service
           cd /var/www/html
           echo "This Web Server is Up and Running!" > index.html
-      ImageId: ami-0ac73f33a1888c64a
+      ImageId: ami-0ac59804e0c10a625
       # ToDo: Change the key-pair name, as applicable to you.
       KeyName: Terra
       SecurityGroups:

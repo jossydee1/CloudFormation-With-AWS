@@ -59,7 +59,7 @@ Resources:
           echo "This Web Server is Up and Running!" > index.html
       ImageId: ami-0ac59804e0c10a625
       # ToDo: Change the key-pair name, as applicable to you.
-      KeyName: Terra
+      KeyName: 
       SecurityGroups:
       - Ref: WebServerSecGroup
       InstanceType: t3.small

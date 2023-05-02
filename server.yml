@@ -68,7 +68,8 @@ Resources:
           # cd /var/www/html
           # echo "This Web Server is Up and Running!" > index.html
       # Look for the right AMI for t3.small instance
-      ImageId: ami-0aa2b7722dc1b5612
+      # ImageId: ami-0aa2b7722dc1b5612
+      ImageId: ami-02396cdd13e9a1257
       # ToDo: Change the key-pair name, as applicable to you.
       KeyName: Terraform
       SecurityGroups:

@@ -74,7 +74,7 @@ Resources:
       KeyName: Terraform
       SecurityGroups:
       - Ref: WebServerSecGroup
-      InstanceType: t3.small
+      InstanceType: t3.micro
       BlockDeviceMappings:
       - DeviceName: "/dev/sdk"
         Ebs:

@@ -56,11 +56,17 @@ Resources:
       UserData:
         Fn::Base64: !Sub |
           #!/bin/bash
-          apt-get update -y
-          apt-get install apache2 -y
-          systemctl start apache2.service
-          cd /var/www/html
-          echo "This Web Server is Up and Running!" > index.html
+          sudo yum update -y
+          sudo yum install httpd -y
+          sudo systemctl start httpd
+          sudo systemctl enable httpd
+          sudo echo "Hello World from $(hostname -f)" > /var/www/html/index.html
+          # #!/bin/bash
+          # apt-get update -y
+          # apt-get install apache2 -y
+          # systemctl start apache2.service
+          # cd /var/www/html
+          # echo "This Web Server is Up and Running!" > index.html
       # Look for the right AMI for t3.small instance
       ImageId: ami-0aa2b7722dc1b5612
       # ToDo: Change the key-pair name, as applicable to you.
